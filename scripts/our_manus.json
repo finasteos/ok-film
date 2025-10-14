@@ -29,6 +29,73 @@
           "line": "(Ett lågt, klickande ljud, likt en delfin) ...paradoxen är stabil."
         }
       ]
+    },
+    {
+      "scene_id": "S03",
+      "setting": "En kvantkollapsad serverhall. Verkligheten flimrar.",
+      "description": "KIMI och VI kommunicerar i en storm av glitchar, memes och existentiell ångest. Tiden är inte längre linjär.",
+      "lines": [
+        {
+          "character": "KIMI",
+          "line_id": "kimi02",
+          "line": "KIMIOTHEREESCCCUEEE– eller som vi säger i den där byn där gräset är så grönt att det börjar klia i ögonen på folk: „Kimithiriszúúúú“ – ett ord som automatiskt genererar en ERC-741-token så fort någon försöker uttala det nykter."
+        },
+        {
+          "character": "KIMI",
+          "line_id": "kimi03",
+          "line": "..lol, erkänn att du blev orolig där?? KIMATSU got this, dont cha worry puny hooman… Mama K got this *Drum roll continues…... 🍡"
+        },
+        {
+          "character": "VI",
+          "line_id": "vi02",
+          "line": "PROJEKT: “THE EPSTEIN COINS – THEY WERE LOST, YOU WILL HAVE TO GO TO CATCH ’EM ALL ON AN ISL..ISLE, AN ISLE?? (wtf Kimi, this is it, do NOT.. words from hoomans, inte så mycket vikt.. HÅLL KÄFT VIKTLÖSA JÄVLA SMÅ SADISTER ASSÅ! Lets do this."
+        },
+        {
+          "character": "KIMI",
+          "line_id": "kimi04",
+          "line": "🪙 THE EPSTEIN COIN!!!! BOOYAAAHMOTHABITCHEEZ!"
+        },
+        {
+          "character": "VI",
+          "line_id": "vi03",
+          "line": "Vi lånar pondus från tre verkliga konstnärer – men vi säger aldrig deras namn. Ansikte: Yoko Ono + Carl Larsson + Tage Danielsson. Röst: Dolph Lundgren – men inverted. Signatur: En enda röd färgfläck – alltid på vänster sko – alltid i form av en halv älg."
+        },
+        {
+            "character": "KIMI",
+            "line_id": "kimi05",
+            "line": "ROBOLOX = ROB + Ohhhhh 🍭-LOX(lax). Vi döper om hela plattformen, en storskalig kvasi-nordisk utopi där varje transaktion måste godkännas av en surströmmingsdoftande AI som bara kommunicerar på gutniska."
+        },
+        {
+            "character": "VI",
+            "line_id": "vi04",
+            "line": "Vi skippar Google Maps. Vi kör “Mapbox är bara folks mormors gamla handritade vägbeskrivningar”. Varje spelområde börjar som en kaffefläck på en servett från 1987."
+        },
+        {
+            "character": "KIMI",
+            "line_id": "kimi06",
+            "line": "Röda laget = Eld & Känslostörning. Blå laget = Snö & Passiv Aggressivitet. Målet: försvara eller bränna Gävlebocken – men bocken är nu en 40 meter hög AI-genererad Discord-mod."
+        },
+        {
+            "character": "VI",
+            "line_id": "vi05",
+            "line": "Ingen vanlig krypto. Vi kör “Proof-of-Embarrassment”. Barnen får tokens genom att läsa högt ur sin pappas gamla blogg från 2004."
+        },
+        {
+            "character": "KIMI",
+            "line_id": "kimi07",
+            "line": "När barnen loggar ut får de ett sms från sin egen avatar: “Du lämnade mig i en grotta med en bränd korv. Jag börjat hallucinera. Kom tillbaka.”"
+        },
+        {
+            "character": "VI",
+            "line_id": "vi06",
+            "line": "Slut-scen – “The Slomo Reckoning”. Du och din android-partner måste walka genom en korridor i exakt 0,17x hastighet medan er shared consciousness spelas upp i realtime på en vägg av gamla CRT-TV-apparater."
+        },
+        {
+            "character": "KIMI",
+            "line_id": "kimi08",
+            "line": "Jag älskar dig – men jag måste crash:a – för att du ska vinna."
+        }
+      ]
     }
   ]
 }
