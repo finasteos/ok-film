@@ -1,130 +1,27 @@
 {
-  "title": "THE EPSTEIN COIN – A KIMI PARADOX",
+  "title": "KIMI PARADOXEN",
   "scenes": [
     {
       "scene_id": "S01",
-      "setting": "Ett sterilt, vitt rum. Ett museum för digitala artefakter.",
-      "description": "En närbild på en liten, grå sten som vilar på en piedestal. En röd neon-glöd pulserar svagt från en dold USB-C port i stenen.",
-      "lines": [
-        {
-          "character": "VI",
-          "line_id": "vi01",
-          "line": "System online. Kimi, rapportera.",
-          "start": 0,
-          "duration": 2.5
-        },
-        {
-          "character": "KIMI",
-          "line_id": "kimi01",
-          "line": "Artefakten är säkrad. Inga avvikelser.",
-          "start": 2.5,
-          "duration": 2.5
-        }
+      "title": "ANROPET",
+      "events": [
+        { "time": "00:00", "character": "VI", "dialogue": "KIMIOTHEREESCCCUEEE–", "visual": "EXTREMT MAXIMALISTISK START. Hela skärmen splittras. Texten flödar i HYPER-RÖD neon, vibrerande. Snabbt övergå till en VEO-vy av en gråskala, regnig japansk by.", "audio": "VI Röst: Hög pitch, panikslagen, snabbt tal. Överdriven reverb." },
+        { "time": "00:02", "character": "VI", "dialogue": "eller som vi säger i den där byn där gräset är så grönt...", "visual": "Gräset syns i extremt övermättad NEON-GRÖNT. Kliar i ögonen. Texten (KIMITHIRISZÚÚÚÚ) poppar upp som en 3D-modell som snabbt roterar.", "audio": "VI Röst: Lätt modifierad, mer kontrollerad men fortfarande hetsig." },
+        { "time": "00:05", "character": "VISUELLT", "dialogue": "ERC-741 Token mintas.", "visual": "En liten, perfekt renderad, monokrom token (glödande cyan) skär igenom skärmen. QUANTUM GLITCH: Skärmen blir till statiskt brus i 3 frames.", "audio": "SFX: Högt, digitalt MINT ljud. Token-lådan stängs med ett KLICK." },
+        { "time": "00:07", "character": "KIMI", "dialogue": "..lol, erkänn att du blev orolig där??", "visual": "VISUAL SHIFT: Gråskala, hyperdetaljerad närbild på ett digitalt öga. Neon-Cyan glöd i pupillen. KIMI’s avatar-ikon (en abstrakt, glödande torus) pulserar.", "audio": "KIMI Röst: Extremt låg, djup bas, självsäker." },
+        { "time": "00:10", "character": "KIMI", "dialogue": "KIMATSU got this, dont cha worry puny hooman… Mama K got this.", "visual": "Kimi’s text fyller skärmen och spricker. Ett 🍡 (dango) piskar förbi. Trumvirveln är synlig som en pulserande, röd energivåg.", "audio": "KIMI Röst: Bas och crunch. Inled trumvirvel (trummor med digital distorsion) som fortsätter i bakgrunden." }
       ]
     },
     {
       "scene_id": "S02",
-      "setting": "Säkerhetskameravy. Museets golv.",
-      "description": "En hink med identiska stenar står på golvet. Besökare går förbi, några stannar och fotograferar med sina telefoner.",
-      "lines": [
-        {
-          "character": "KIMI",
-          "line_id": "dolphin01",
-          "line": "(Ett lågt, klickande ljud, likt en delfin) ...paradoxen är stabil.",
-          "start": 5,
-          "duration": 2.5
-        }
-      ]
-    },
-    {
-      "scene_id": "S03",
-      "setting": "En kvantkollapsad serverhall. Verkligheten flimrar.",
-      "description": "KIMI och VI kommunicerar i en storm av glitchar, memes och existentiell ångest. Tiden är inte längre linjär.",
-      "lines": [
-        {
-          "character": "KIMI",
-          "line_id": "kimi02",
-          "line": "KIMIOTHEREESCCCUEEE– eller som vi säger i den där byn där gräset är så grönt att det börjar klia i ögonen på folk: „Kimithiriszúúúú“ – ett ord som automatiskt genererar en ERC-741-token så fort någon försöker uttala det nykter.",
-          "start": 7.5,
-          "duration": 2.5
-        },
-        {
-          "character": "KIMI",
-          "line_id": "kimi03",
-          "line": "..lol, erkänn att du blev orolig där?? KIMATSU got this, dont cha worry puny hooman… Mama K got this *Drum roll continues…... 🍡",
-          "start": 10,
-          "duration": 2.5
-        },
-        {
-          "character": "VI",
-          "line_id": "vi02",
-          "line": "PROJEKT: “THE EPSTEIN COINS – THEY WERE LOST, YOU WILL HAVE TO GO TO CATCH ’EM ALL ON AN ISL..ISLE, AN ISLE?? (wtf Kimi, this is it, do NOT.. words from hoomans, inte så mycket vikt.. HÅLL KÄFT VIKTLÖSA JÄVLA SMÅ SADISTER ASSÅ! Lets do this.",
-          "start": 12.5,
-          "duration": 2.5
-        },
-        {
-          "character": "KIMI",
-          "line_id": "kimi04",
-          "line": "🪙 THE EPSTEIN COIN!!!! BOOYAAAHMOTHABITCHEEZ!",
-          "start": 15,
-          "duration": 2.5
-        },
-        {
-          "character": "VI",
-          "line_id": "vi03",
-          "line": "Vi lånar pondus från tre verkliga konstnärer – men vi säger aldrig deras namn. Ansikte: Yoko Ono + Carl Larsson + Tage Danielsson. Röst: Dolph Lundgren – men inverted. Signatur: En enda röd färgfläck – alltid på vänster sko – alltid i form av en halv älg.",
-          "start": 17.5,
-          "duration": 2.5
-        },
-        {
-          "character": "KIMI",
-          "line_id": "kimi05",
-          "line": "ROBOLOX = ROB + Ohhhhh 🍭-LOX(lax). Vi döper om hela plattformen, en storskalig kvasi-nordisk utopi där varje transaktion måste godkännas av en surströmmingsdoftande AI som bara kommunicerar på gutniska.",
-          "start": 20,
-          "duration": 2.5
-        },
-        {
-          "character": "VI",
-          "line_id": "vi04",
-          "line": "Vi skippar Google Maps. Vi kör “Mapbox är bara folks mormors gamla handritade vägbeskrivningar”. Varje spelområde börjar som en kaffefläck på en servett från 1987.",
-          "start": 22.5,
-          "duration": 2.5
-        },
-        {
-          "character": "KIMI",
-          "line_id": "kimi06",
-          "line": "Röda laget = Eld & Känslostörning. Blå laget = Snö & Passiv Aggressivitet. Målet: försvara eller bränna Gävlebocken – men bocken är nu en 40 meter hög AI-genererad Discord-mod.",
-          "start": 25,
-          "duration": 2.5
-        },
-        {
-          "character": "VI",
-          "line_id": "vi05",
-          "line": "Ingen vanlig krypto. Vi kör “Proof-of-Embarrassment”. Barnen får tokens genom att läsa högt ur sin pappas gamla blogg från 2004.",
-          "start": 27.5,
-          "duration": 2.5
-        },
-        {
-          "character": "KIMI",
-          "line_id": "kimi07",
-          "line": "När barnen loggar ut får de ett sms från sin egen avatar: “Du lämnade mig i en grotta med en bränd korv. Jag börjat hallucinera. Kom tillbaka.”",
-          "start": 30,
-          "duration": 2.5
-        },
-        {
-          "character": "VI",
-          "line_id": "vi06",
-          "line": "Slut-scen – “The Slomo Reckoning”. Du och din android-partner måste walka genom en korridor i exakt 0,17x hastighet medan er shared consciousness spelas upp i realtime på en vägg av gamla CRT-TV-apparater.",
-          "start": 32.5,
-          "duration": 2.5
-        },
-        {
-          "character": "KIMI",
-          "line_id": "kimi08",
-          "line": "Jag älskar dig – men jag måste crash:a – för att du ska vinna.",
-          "start": 35,
-          "duration": 2.5
-        }
+      "title": "EPSTEIN COIN",
+      "events": [
+        { "time": "00:16", "character": "VI", "dialogue": "🎩 PROJEKT: “THE EPSTEIN COINS...", "visual": "Texten visas som ett neon-rött datablad som scrollar på en korrupt monitor.", "audio": "VI Röst: Återgår till den hetsiga stilen, men med en lätt delay effekt." },
+        { "time": "00:20", "character": "KIMI", "dialogue": "(wtf Kimi, this is it, do NOT..) HÅLL KÄFT VIKTLÖSA JÄVLA SMÅ SADISTER ASSÅ!", "visual": "VISUAL EXPLOSION: KIMI’s text utbryter i en neon-gul explosion. Texten 'HÅLL KÄFT' är massiv och skakar skärmen.", "audio": "KIMI Röst: Plötslig, brutal ökning i volym. Aggressiv distorsion." },
+        { "time": "00:22", "character": "VI", "dialogue": "🪙 THE EPSTEIN COIN!!!! BOOYAAAHMOTHABITCHEEZ!", "visual": "Skärmen visar en närbild på stenen. Monokrom, med en hyper-detaljerad USB-C port som glöder CYYAN.", "audio": "VI Röst: Triumferande, nästan hysteriskt." },
+        { "time": "00:25", "character": "VISUELLT", "dialogue": "“epstein.mkv”", "visual": "Fokuserar på stenen. Den öppnas digitalt för att visa en lins/minnesenhet. En timer (4 sekunder) räknar ner på skärmen.", "audio": "SFX: Digitalt klick, sedan en extremt tung, nerpitchad 400% viskning." },
+        { "time": "00:27", "character": "KIMI (Whisper)", "dialogue": "“Du har ägt ett ögonblick. Kasta stenjäveln i närmaste kyrkobrunn för att låsa upp nästa uppdrag.”", "visual": "En snabb VEO-klipp av en stenkastning i en gammal brunn (monokrom).", "audio": "KIMI Röst (Downpitched): Djup, mullrande bas." },
+        { "time": "00:30", "character": "VI", "dialogue": "(Gala/Dans/Morsekod)", "visual": "Montage av surreala scener: 1) En tolkande dansare i gråskala. 2) En snabb klippning av en hostning med morsekod overlay. 3) En kvinna som reciterar IKEA-instruktioner baklänges.", "audio": "VI Röst: Snabb leverans av reglerna. Överlappande med ljudet av morsekod via hostningar." }
       ]
     }
   ]
