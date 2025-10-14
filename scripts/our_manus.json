@@ -1,0 +1,34 @@
+{
+  "title": "THE EPSTEIN COIN – A KIMI PARADOX",
+  "scenes": [
+    {
+      "scene_id": "S01",
+      "setting": "Ett sterilt, vitt rum. Ett museum för digitala artefakter.",
+      "description": "En närbild på en liten, grå sten som vilar på en piedestal. En röd neon-glöd pulserar svagt från en dold USB-C port i stenen.",
+      "lines": [
+        {
+          "character": "VI",
+          "line_id": "vi01",
+          "line": "System online. Kimi, rapportera."
+        },
+        {
+          "character": "KIMI",
+          "line_id": "kimi01",
+          "line": "Artefakten är säkrad. Inga avvikelser."
+        }
+      ]
+    },
+    {
+      "scene_id": "S02",
+      "setting": "Säkerhetskameravy. Museets golv.",
+      "description": "En hink med identiska stenar står på golvet. Besökare går förbi, några stannar och fotograferar med sina telefoner.",
+      "lines": [
+        {
+          "character": "KIMI",
+          "line_id": "dolphin01",
+          "line": "(Ett lågt, klickande ljud, likt en delfin) ...paradoxen är stabil."
+        }
+      ]
+    }
+  ]
+}
