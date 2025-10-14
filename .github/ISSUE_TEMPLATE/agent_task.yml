@@ -1,0 +1,19 @@
+name: "Agent Task"
+description: "Claim a bite-sized job"
+title: "[TASK] <short desc>"
+labels: ["todo"]
+body:
+  - type: dropdown
+    id: domain
+    attributes:
+      label: "Front"
+      options:
+        - voice
+        - video
+        - script
+        - music
+        - pipeline
+  - type: textarea
+    id: notes
+    attributes:
+      label: "Notes / meat-brain dump"

@@ -1,3 +1,6 @@
+![Mint-Public](https://img.shields.io/badge/repo-public-mint?style=flat-square&amp;logo=github)
+![Agents](https://img.shields.io/github/issues/finasteos/ok-film?color=00ff22&amp;label=open%20tasks)
+
 # Projektplan: OK Film
 
 Detta dokument bryter ner manifestet i `önskalista.md` till en handlingsplan.
