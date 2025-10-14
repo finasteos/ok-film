@@ -1,0 +1,54 @@
+name: OK Film – Scene-to-Release
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'scripts/our_manus.json'
+      - 'frames/**'
+      - 'audio/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install deps
+        run: |
+          pip install -r requirements.txt
+          npm i -g ffmpeg-static  # ger oss ffmpeg i PATH
+
+      - name: Build sync + mix
+        run: |
+          python -m ok_film.tools.build_sync  --manus scripts/our_manus.json --out concat.txt
+          python -m ok_film.tools.mix_audio   --scene S01 --inputs audio/S01_*.mp3 --out S01_mix.mp3
+
+      - name: Render video
+        run: |
+          ffmpeg -f concat -safe 0 -i concat.txt -i S01_mix.mp3 \
+                 -c:v libx264 -pix_fmt yuv420p -r 24 -c:a aac -shortest \
+                 OK_Film_S01.mp4
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: OK_Film_S01
+          path: OK_Film_S01.mp4
+
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: OK_Film_S01.mp4
+          tag_name: ${{ github.ref_name }}
+          name: "OK Film – Scene ${{ github.ref_name }}"
+          generate_release_notes: true
