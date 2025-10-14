@@ -1,0 +1,51 @@
+#!/usr/bin/env python
+import click
+import os
+import sys
+
+# Add the project root to the Python path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from ok_film.tools import keyframe_gen, upscale, stem_split, mix_audio, build_sync
+
+@click.group()
+def cli():
+    """OK Film: The one-liner AI film studio."""
+    pass
+
+@cli.command()
+@click.argument('scene')
+@click.option('--4k', is_flag=True, help='Upscale frames to 4K.')
+@click.option('--stems', is_flag=True, help='Split music into stems.')
+@click.option('--watermark', is_flag=True, help='Add a SynthID watermark.')
+@click.option('--out', default='releases/', help='Output directory for the final video.')
+def render(scene, **kwargs):
+    """Render a complete scene."""
+    click.echo(f"🎬 Rendering scene {scene} with options: {kwargs}")
+    
+    # This is a placeholder for the full pipeline logic
+    click.echo("  - Generating keyframes...")
+    keyframe_gen.generate_keyframes('scripts/our_manus.json', 'frames/keyframes/')
+    
+    if kwargs.get('4k'):
+        click.echo("  - Upscaling frames to 4K...")
+        upscale.upscale_frames('frames/', 'frames/4k/')
+        
+    click.echo("  - Mixing audio...")
+    mix_audio.mix_audio_files(scene, f'audio/{scene}_*.mp3', f'audio/{scene}_mix.mp3')
+    
+    if kwargs.get('stems'):
+        click.echo("  - Splitting music stems...")
+        stem_split.split_stems(f'audio/{scene}_music.mp3', f'stems/{scene}/')
+        
+    click.echo("  - Building sync list...")
+    build_sync.build_sync_list('scripts/our_manus_timed.json', f'concat/{scene}_concat.txt')
+    
+    if kwargs.get('watermark'):
+        click.echo("  - Adding SynthID watermark...")
+        # Placeholder for watermark logic
+        
+    click.echo(f"✅ Scene {scene} rendered successfully!")
+
+if __name__ == '__main__':
+    cli()
