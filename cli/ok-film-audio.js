@@ -41,8 +41,8 @@ async function synthesize(text, voice, fileName) {
 
 // ---------- Voice mapping ----------
 const voiceMap = {
-  VI:   "sv-SE-Chirp3-HD-C",   // neutral, klar
-  KIMI: "sv-SE-Chirp3-HD-D"    // lite mörkare, glitchig
+  VI:   "sv-SE-Wavenet-C",   // neutral, klar (Female)
+  KIMI: "sv-SE-Wavenet-D"    // lite mörkare, glitchig (Male)
 };
 
 // ---------- Main ----------
