@@ -6,7 +6,7 @@ import sys
 # Add the project root to the Python path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from ok_film.tools import keyframe_gen, upscale, stem_split, mix_audio, build_sync
+from ok_film.tools import keyframe_gen, upscale, stem_split, mix_audio, build_sync, trailer_gen, clone_voice, premiere_server
 
 @click.group()
 def cli():
@@ -18,6 +18,7 @@ def cli():
 @click.option('--4k', is_flag=True, help='Upscale frames to 4K.')
 @click.option('--stems', is_flag=True, help='Split music into stems.')
 @click.option('--watermark', is_flag=True, help='Add a SynthID watermark.')
+@click.option('--preview', is_flag=True, help='Skip 4K for a fast preview.')
 @click.option('--out', default='releases/', help='Output directory for the final video.')
 def render(scene, **kwargs):
     """Render a complete scene."""
@@ -47,5 +48,31 @@ def render(scene, **kwargs):
         
     click.echo(f"✅ Scene {scene} rendered successfully!")
 
+@cli.command()
+@click.option('--name', required=True, help='The name for the new voice.')
+@click.option('--sample', required=True, help='Path to the 10s WAV sample file.')
+def clone(name, sample):
+    """Clone a voice from a sample."""
+    clone_voice.clone_voice(name, sample)
+
+@cli.command()
+@click.argument('scene')
+@click.option('--trailer', is_flag=True, help='Generate a trailer for the scene.')
+@click.option('--clone', 'clone_path', help='Path to a voice sample to clone.')
+@click.option('--port', default=7331, help='Port for the premiere server.')
+def premiere(scene, trailer, clone_path, port):
+    """Host an interactive premiere for a scene."""
+    if trailer:
+        click.echo("  - Generating trailer...")
+        trailer_gen.generate_trailer('scripts/our_manus.json', f'releases/{scene}_Trailer.txt')
+    if clone_path:
+        clone_name = os.path.splitext(os.path.basename(clone_path))[0]
+        click.echo(f"  - Cloning voice for '{clone_name}'...")
+        clone_voice.clone_voice(clone_name, clone_path)
+        
+    click.echo(f"🚀 Starting premiere server for scene {scene} on port {port}...")
+    # This is a placeholder for running the server
+    # In a real implementation, you would start the premiere_server.py script
+    
 if __name__ == '__main__':
     cli()

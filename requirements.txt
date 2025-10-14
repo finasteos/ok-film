@@ -22,3 +22,4 @@ click>=8.1.7
 # ------- Bliss-Booster -------
 # realesrgan-ncnn-vulkan (install separately)
 # demucs (install separately)
+websockets>=12.0
