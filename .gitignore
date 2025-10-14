@@ -3,3 +3,10 @@ venv/
 __pycache__/
 
 service_account.json
+
+
+# Generated audio files
+audio/
+
+# Python virtual environment
+.venv/

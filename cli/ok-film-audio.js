@@ -3,8 +3,10 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import dotenv from "dotenv";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
+dotenv.config({ path: path.resolve(__dirname, "..", ".env") });
 const root    = path.resolve(__dirname, "..");
 const manus   = JSON.parse(fs.readFileSync(path.join(root, "scripts", "our_manus.json"), "utf-8"));
 const outDir  = path.join(root, "audio");

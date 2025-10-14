@@ -1,3 +1,25 @@
+# Snabb-start för Roo Code
+
+```bash
+# 1. Klon repot
+git clone https://github.com/finasteos/ok-film.git
+cd ok-film
+
+# 2. Venv
+python -m venv .venv
+source .venv/bin/activate          # Win: .venv\Scripts\activate
+pip install -r requirements.txt
+
+# 3. Env
+cp .env.template .env
+# edit .env med dina nycklar
+
+# 4. Audio
+node cli/ok-film-audio.js          # genererar alla röstspår
+```
+
+---
+
 ![Mint-Public](https://img.shields.io/badge/repo-public-mint?style=flat-square&amp;logo=github)
 ![Agents](https://img.shields.io/github/issues/finasteos/ok-film?color=00ff22&amp;label=open%20tasks)
 
