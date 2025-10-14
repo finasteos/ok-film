@@ -6,7 +6,7 @@ import sys
 # Add the project root to the Python path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from ok_film.tools import keyframe_gen, upscale, stem_split, mix_audio, build_sync, trailer_gen, clone_voice, premiere_server
+from ok_film.tools import keyframe_gen, upscale, stem_split, mix_audio, build_sync, trailer_gen, clone_voice, premiere_server, dub_factory, nft_mint, ai_critic
 
 @click.group()
 def cli():
@@ -74,5 +74,30 @@ def premiere(scene, trailer, clone_path, port):
     # This is a placeholder for running the server
     # In a real implementation, you would start the premiere_server.py script
     
+@cli.command()
+@click.argument('scene')
+@click.option('--langs', help='Comma-separated list of language codes for dubbing.')
+@click.option('--mint', 'mint_supply', type=int, help='Number of NFTs to mint.')
+@click.option('--critic', is_flag=True, help='Generate an AI critic review.')
+@click.option('--upload', is_flag=True, help='Upload the AI critic review to YouTube.')
+def finale(scene, langs, mint_supply, critic, upload):
+    """Run the entire FINALÉ pipeline."""
+    click.echo(f"🚀🚀🚀 Running FINALÉ for scene {scene} 🚀🚀🚀")
+    
+    if langs:
+        click.echo("\n--- 🌍 Generating Multi-Language Dubs ---")
+        dub_factory.dub_scene('scripts/our_manus.json', scene, langs.split(','))
+        
+    if mint_supply:
+        click.echo("\n--- 🖼️ Minting NFTs ---")
+        nft_mint.mint_scene_as_nft(scene, mint_supply)
+        
+    if critic:
+        click.echo("\n--- 🤖 Generating AI Critic Review ---")
+        video_path = f"releases/OK_Film_{scene}.mp4" # Assuming this is the final video
+        ai_critic.generate_ai_criticism(scene, video_path, upload)
+        
+    click.echo(f"\n✅✅✅ FINALÉ complete for scene {scene}! ✅✅✅")
+
 if __name__ == '__main__':
     cli()
