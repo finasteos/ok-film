@@ -84,6 +84,12 @@ Detta dokument bryter ner manifestet i `önskalista.md` till en handlingsplan.
     - [ ] Skapa en grundläggande "Pro-Dark" UI-prototyp.
     - [ ] Paketera applikationen för macOS (Homebrew) och skapa en Dockerfile.
 
+## FAS 5: Interdimensional Integration
+
+- **Mål:** Koppla OK Film-projektet till det interaktiva webb-universumet.
+- **Uppgifter:**
+    - [ ] Utforska integration med [Twilight River](https://twilight-river-432.meku.app/).
+    - [ ] Planera hur karaktärer och narrativ kan flöda mellan de två projekten.
 ---
 
 Denna plan är en levande dokumentation och kommer att uppdateras när vi fortskrider. Nästa omedelbara steg är att lösa ljudgenereringen (FAS 1.1).
